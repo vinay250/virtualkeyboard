@@ -73,7 +73,7 @@ while True:
                 cv2.putText(img,button.text,(x+20,y+65),cv2.FONT_HERSHEY_PLAIN,4,(255,255,255),4)
 
                 # Calculate distance between specific landmarks on the first hand and draw it on the image
-                length, info, img = detector.findDistance(lmList[8][0:2],lmList[12][0:2],img,color=(255, 0, 255),draw=False)
+                length, info, img = detector.findDistance(lmList[8][0:2], lmList[12][0:2], img, color=(255, 0, 255))
                 
                 if length<45:
                     keyboard.press(button.text)
